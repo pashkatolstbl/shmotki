@@ -1,0 +1,264 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Ariel", serif;
+  font-size: 25px;
+  background-color: #02352eab;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  display: block;
+}
+
+h1 {
+  color: 0;
+}
+
+h2 {
+  color: black;
+  font-size: larger;
+}
+
+.bradcrm {
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.top-head {
+  background: #002c2a;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-head__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.product {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+.product__img {
+  width: 100%;
+}
+.product__content {
+  background-color: #05817b;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.product__name {
+  font-size: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+.product__text {
+  font-style: Ariel;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+.product__price {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.breadcrumbs__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.breadcrumbs__link_site {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.filter {
+  width: 360px;
+  box-sizing: border-box;
+  top: 18px;
+  position: relative;
+  z-index: 10;
+  font-size: 25px;
+}
+.filter__content {
+  background-color: #000000;
+  padding: 0px 30px 30px;
+}
+.filter[open] {
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter__summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-left: 16px;
+}
+.filter__heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 17px;
+}
+.filter__item {
+  margin-top: 16px;
+}
+.filter__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.filter__link-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 16px;
+}
+.filter__head {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  padding: 8px 11px 11px 11px;
+  border-bottom: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+}
+
+.sort {
+  padding-top: 12px;
+  display: flex;
+  gap: 16px;
+  font-style: normal;
+}
+.sort__details {
+  position: relative;
+}
+.sort__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.sort__summary {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.sort__box {
+  background-color: #000000;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+  position: absolute;
+  left: -9px;
+  top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sort__check {
+  gap: 9px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fdfdfd;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #04504c;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+
+.nav {
+  background-color: #05817b;
+  box-shadow: 7px 5px 10px rgb(255, 255, 255);
+  width: 232px;
+  padding: 32px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  transition: right 0.3s;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-left: 1px solid rgb(255, 255, 255);
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+#burger {
+  position: absolute;
+  left: -999999px;
+  visibility: hidden;
+}
+#burger:checked ~ .nav {
+  right: -232px;
+}
+
+.box-content {
+  overflow: hidden;
+}
+
+.product-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filter-sort {
+  height: 132px;
+  display: flex;
+  padding-top: 39px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 30px;
+}/*# sourceMappingURL=style.css.map */
